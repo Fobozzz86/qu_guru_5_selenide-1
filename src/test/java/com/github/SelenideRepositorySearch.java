@@ -10,7 +10,6 @@ import static com.codeborne.selenide.Selenide.*; // все команды Seleni
 
 
 public class SelenideRepositorySearch extends TestBase {
-
     @Test
     void shouldFindSelenideRepositoryAtTheTop() {
 
