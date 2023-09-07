@@ -18,7 +18,7 @@ public class BestContributorToSelenide extends TestBase {
         open("https://github.com/selenide/selenide");
         // подвести мышку к первому аватару из блока Contributors
         $("div.Layout-sidebar").$(byText("Contributors")) //.closest искать вверх
-                .closest(".BorderGrid-cell").$$("ul li").first().hover();
+                .closest(".BorderGrid-cell").$$("ul li").first().hover(); //  hover() эмулирует наведение мышкой на элемент (без клика).
         // .closest("h2").sibling(0).$$("li").first().hover(); // .sibling искать брата
 
         // проверка: во всплывающем окне есть текст Andrei Solntsev
